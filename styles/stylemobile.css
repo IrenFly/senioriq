@@ -1,0 +1,38 @@
+/* ---------------- MOBILITY -------------------- */
+@media (max-width: 667px) {
+	.flex-wrapper {
+		flex-direction: column;
+	}
+
+	#maincontent {
+		flex-basis: 100%;
+		padding: 5px;
+	}
+
+	#rightsidebar {
+		flex-basis: 100%;
+		padding: 0px;
+		text-align: center;
+	}
+
+	.navi_item {
+		padding: 12px 1px;
+	}
+
+	#personal_info label {
+		display: block;
+		float: none;
+	}
+
+}
+
+@media (max-width: 767px) { /* ADJUSTS RESOURCE PAGE */
+	.resource_item {
+		flex-direction: column;
+	}
+
+	.resource_image img {
+		max-width: 200px;
+	}
+}
+
