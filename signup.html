@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membership</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- GLOBAL STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="E:/Final_Project/styles/mainstyle2.css">
+	<!-- MOBILE STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="E:/Final_Project/styles/stylemobile.css">
+	<!-- jQUERY LIBRARY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1 id="banner">Senior iQ</h1>
+	</header>
+		<nav>
+			<a href="main.html"><div class="navi_item">Main</div></a>
+			<a href="events.html"><div class="navi_item">Events</div></a>
+			<a href="resources.html"><div class="navi_item">Resources</div></a>
+			<a href="signup.html"><div class="navi_item">Membership</div></a>
+		</nav>
+	<div class="flex-wrapper">
+		<div id="maincontent">
+			<form action="https://www.w3schools.com/action_page.php" target="_blank" onsubmit="formSubmited()">
+			<fieldset id="personal_info">
+				<legend>Personal Info</legend>
+				<label for="fname">First Name:</label> <input type="text" name="fname" id="fname">
+				<br><label for="lname">Last Name:</label> <input type="text" name="lname" id="lname">
+
+				<br><label for="age">Age:</label> <input type="number" min="50" max="110" name="age" id="age">
+
+				<br><label for="email">E-mail:</label> <input type="text" name="email" id="email" placeholder="example@host.com">
+
+				<br><label for="phone">Phone Number:</label> <input type="text" name="phone" id="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+				<br><label for="gender">Gender:</label> 
+					<br><input type="radio" name="gender" id="gender" value="woman">Woman 
+					<br><input type="radio" name="gender" id="gender" value="man">Man 
+					<br><input type="radio" name="gender" id="gender" value="transwoman">Transwoman 
+					<br><input type="radio" name="gender" id="gender" value="transman">Transman
+					<br><input type="radio" name="gender" id="gender" value="nonbinary">Non-binary 
+					<br><input type="radio" name="gender" id="gender" value="other">Other (please specify): <input type="text" name="gender_specify" id="gender_specify">
+			</fieldset>
+			<fieldset>
+				<legend>Membership Options</legend>
+
+				<label for="activities">Please check any of the following activities you would be interested in:</label>
+				<div class="flex">
+					<div id="first_activities">
+						<input type="checkbox" name="bake_sale" value="yes">Bake Sale
+						<br><input type="checkbox" name="exercise" value="yes">Exercise Classes
+						<br><input type="checkbox" name="movies" value="yes">Movie Night
+						<br><input type="checkbox" name="games" value="yes">Board Games
+						<br><input type="checkbox" name="brunch" value="yes">Brunch Gathering
+					</div>
+					<div id="second_activities">
+						<input type="checkbox" name="bus" value="yes">Bus Tours
+						<br><input type="checkbox" name="bingo" value="yes">Bingo
+						<br><input type="checkbox" name="facilities" value="yes">Senior Facility Visits
+						<br><input type="checkbox" name="theatre" value="yes">Sunday Matinee Theatre
+					</div>
+				</div>
+
+				<p><label for="activism">Please check any of the following areas of activism you would interested in:</label>
+					<br><input type="checkbox" name="ombudsman" value="yes">Advocacy for 2SLGBTQ+ Seniors in nursing facilities
+					<br><input type="checkbox" name="trans" value="yes">Trans Rights
+					<br><input type="checkbox" name="two_spirit" value="yes">Advocacy with Two Spirit Elders
+					<br><input type="checkbox" name="politics" value="yes">Political Campaigns
+					<br><input type="checkbox" name="letters" value="yes">Letter Writing Campaigns</p>
+
+				<p><label for="volunteer">Are you interested in volunteering with Senior iQ?</label>
+					<br><input type="radio" name="volunteer" value="yes">Yes
+					<br><input type="radio" name="volunteer" value="no">No</p>
+			</fieldset>
+			<input type="submit" value="Submit"> <input type="reset" value="Clear Form">
+			</form>
+		</div>
+
+		<div id="rightsidebar">
+				<div>Text Size:<br><img src="images/minus.png" id="minus"><img src="images/plus.png" id="plus"></div>
+				<p>Sign up for email newsletter<br><input type="email" id="email_newsletter" name="email_newsletter" placeholder="user@example.com"><br><input type="submit"></p>
+		</div>
+	</div>
+	<footer>
+		<div id="footer_left">
+			<p>Senior iQ<br>123 Main St. Suite 37<br>Hamilton, ON, L8P 1Z5<br>(519) 555-1234<br>senioriq@gmail.com
+			</p>
+		</div>
+		<div id="footer_right">
+			<p><a href="#"><img src="images/facebook.png" alt="facebook logo"></a> <a href="#"><img src="images/twitter.png" alt="twitter logo"></a><a href="#"><img src="images/google-plus.png" alt="google plus logo"></a></p>
+		</div>
+		<div id="footer_bottom">
+			Charlene Strozinsky &copy; <span id="copyright_year">2019</span> | retronami@gmail.com | Hamilton, ON, Canada
+		</div>
+	</footer>
+
+<!-- NAME ALERT ON FORM SUBMIT FUNCTION -->	
+<script type="text/javascript" src="E:/Final_Project/javascript/formSubmited.js"></script>
+
+<!-- TEXT SIZE FUNCTION -->
+<script type="text/javascript" src="E:/Final_Project/javascript/textSize.js"></script>
+</body>
+</html>
