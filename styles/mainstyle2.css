@@ -7,7 +7,7 @@
 
 
 body {
-	background-image: url("E:/Final_Project/images/circles.jpg");
+	background-image: url("../images/circles.jpg");
 	background-color: #a3a3a3;
 	background-blend-mode: overlay;
 	background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
 	color: #e8e8e8;
 	text-align: left;
 	letter-spacing: 7px;
-	text-shadow: 3px 5px 3px black;
+	text-shadow: -3px 3px 4px #141414de;
 	padding: 10px;
 	margin: 0px;
 }
@@ -37,7 +37,7 @@ nav {
 	margin: 0% 5%;
 	justify-content: space-around;
 	background-color: #43B05C;
-	box-shadow: -3px 5px 5px, 0px -2px 5px;
+	box-shadow: -3px 5px 5px #00000096;
 	
 }
 
@@ -70,7 +70,7 @@ nav a { /* YOU MAY WANT TO CHANGE THIS TO BE MORE SPECIFIC*/
 .flex-wrapper { 
 	/*Goes around the main and right sidebar content of the page, allowing them to flex */
 	display: flex;
-	box-shadow: -3px 3px 5px black;
+	box-shadow: -3px 3px 5px #0000005c;
 	justify-content: space-between;
 	margin: 0% 5%;
 }
@@ -135,7 +135,7 @@ footer {
 	background-color: #F1724C;
 	padding: 10px;
 	margin: 1% 5%;
-	box-shadow: -3px 3px 10px black;
+	box-shadow: -3px 3px 4px #00000057;
 	color: white;
 	font-family: 'Muli', sans-serif;
 	font-size: 12px;
